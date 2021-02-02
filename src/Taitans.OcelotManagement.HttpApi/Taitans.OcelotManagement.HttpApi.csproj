@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace />
+    <PackageIcon>8080.png</PackageIcon>
+    <PackageIconUrl />
+  </PropertyGroup>
+ 
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="4.2.0" />
+  </ItemGroup>
+ 
+  <ItemGroup> 
+    <ProjectReference Include="..\Taitans.OcelotManagement.Application.Contracts\Taitans.OcelotManagement.Application.Contracts.csproj" />
+  </ItemGroup>
+
+</Project>

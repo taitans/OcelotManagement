@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace />
+    <PackageIcon>8080.png</PackageIcon>
+    <PackageIconUrl />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.MongoDB" Version="4.2.0" />
+  </ItemGroup>
+ 
+  <ItemGroup> 
+    <ProjectReference Include="..\Taitans.OcelotManagement.Domain\Taitans.OcelotManagement.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

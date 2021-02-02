@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace />
+    <PackageIcon>8080.png</PackageIcon>
+    <PackageIconUrl />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ocelot" Version="16.0.1" />
+    <PackageReference Include="Volo.Abp" Version="4.2.0" />
+    <PackageReference Include="Volo.Abp.Autofac" Version="4.2.0" />
+    <PackageReference Include="Volo.Abp.AspNetCore.Mvc" Version="4.2.0" />
+    <PackageReference Include="Volo.Abp.EventBus.RabbitMQ" Version="4.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Taitans.OcelotManagement.EntityFrameworkCore\Taitans.OcelotManagement.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+  
+</Project>
