@@ -10,13 +10,13 @@ namespace Taitans.OcelotManagement
     [DependsOn(
         typeof(OcelotManagementApplicationContractsModule),
         typeof(AbpAspNetCoreMvcModule))]
-    public class AbpOcelotManagementHttpApiModule : AbpModule
+    public class OcelotManagementHttpApiModule : AbpModule
     {
         public override void PreConfigureServices(ServiceConfigurationContext context)
         {
             PreConfigure<IMvcBuilder>(mvcBuilder =>
             {
-                mvcBuilder.AddApplicationPartIfNotExists(typeof(AbpOcelotManagementHttpApiModule).Assembly);
+                mvcBuilder.AddApplicationPartIfNotExists(typeof(OcelotManagementHttpApiModule).Assembly);
             });
         }
 

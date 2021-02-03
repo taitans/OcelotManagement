@@ -7,7 +7,7 @@ namespace Taitans.OcelotManagement
     [DependsOn(
         typeof(OcelotManagementApplicationContractsModule),
         typeof(AbpHttpClientModule))]
-    public class AbpOcelotHttpApiClientModule : AbpModule
+    public class OcelotHttpApiClientModule : AbpModule
     {
         public const string RemoteServiceName = "Ocelot";
 

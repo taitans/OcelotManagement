@@ -8,7 +8,7 @@ namespace Taitans.OcelotManagement
         protected OcelotManagementAppServiceBase()
         {
             LocalizationResource = typeof(OcelotManagementResource);
-            ObjectMapperContext = typeof(AbpOcelotManagementApplicationModule);
+            ObjectMapperContext = typeof(OcelotManagementApplicationModule);
         }
     }
 }

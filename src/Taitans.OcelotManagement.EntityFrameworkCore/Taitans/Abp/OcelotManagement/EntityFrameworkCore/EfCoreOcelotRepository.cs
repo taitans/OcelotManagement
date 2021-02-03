@@ -27,7 +27,7 @@ namespace Taitans.OcelotManagement.EntityFrameworkCore
                         where global.Name == name
                         select global;
 
-            return await query.FirstOrDefaultAsync(GetCancellationToken(cancellationToken)).ConfigureAwait(false);
+            return await (await GetDbSetAsync()).IncludeDetails(includeDetails).FirstOrDefaultAsync(c => c.Name == name, GetCancellationToken(cancellationToken)); 
         }
 
         public async Task<List<OcelotRoute>> GetRoutesAsync(Guid id)

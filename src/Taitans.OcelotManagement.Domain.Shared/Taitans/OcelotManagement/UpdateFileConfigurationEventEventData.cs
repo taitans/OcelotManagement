@@ -10,10 +10,10 @@ namespace Taitans.OcelotManagement
         public DateTime UpdateTime { get; set; }
 
 
-        public UpdateFileConfigurationEventEventData(string name, DateTime? updateTime)
+        public UpdateFileConfigurationEventEventData(string name, DateTime updateTime)
         {
             Name = name;
-            UpdateTime = updateTime ?? DateTime.Now;
+            UpdateTime = updateTime;
         }
     }
 }

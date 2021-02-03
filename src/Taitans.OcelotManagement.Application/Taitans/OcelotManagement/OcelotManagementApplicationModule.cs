@@ -11,11 +11,11 @@ namespace Taitans.OcelotManagement
         typeof(AbpDddApplicationModule),
         typeof(AbpAutoMapperModule)
         )]
-    public class AbpOcelotManagementApplicationModule : AbpModule
+    public class OcelotManagementApplicationModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            context.Services.AddAutoMapperObjectMapper<AbpOcelotManagementApplicationModule>();
+            context.Services.AddAutoMapperObjectMapper<OcelotManagementApplicationModule>();
             Configure<AbpAutoMapperOptions>(options =>
             {
                 options.AddProfile<AbpOcelotManagementApplicationAutoMapperProfile>();
