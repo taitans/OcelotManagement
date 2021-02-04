@@ -3,7 +3,7 @@ using System;
 
 namespace Taitans.OcelotManagement
 {
-    public abstract class AbpOcelotManagementApplicationTestBase : OcelotManagementTestBase<AbpOcelotManagementApplicationTestModule>
+    public abstract class OcelotManagementApplicationTestBase : OcelotManagementTestBase<OcelotManagementApplicationTestModule>
     {
         protected virtual void UsingDbContext(Action<IOcelotManagementDbContext> action)
         {

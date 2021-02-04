@@ -5,7 +5,7 @@ using Xunit;
 
 namespace Taitans.OcelotManagement
 {
-    public class Localization_Tests : AbpOcelotManagementDomainTestBase
+    public class Localization_Tests : OcelotManagementDomainTestBase
     {
         private readonly IStringLocalizer<OcelotManagementResource> _stringLocalizer;
 

@@ -18,7 +18,7 @@ namespace Taitans.OcelotManagement
             context.Services.AddAutoMapperObjectMapper<OcelotManagementApplicationModule>();
             Configure<AbpAutoMapperOptions>(options =>
             {
-                options.AddProfile<AbpOcelotManagementApplicationAutoMapperProfile>();
+                options.AddProfile<OcelotManagementApplicationAutoMapperProfile>();
             });
         }
     }

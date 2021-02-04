@@ -4,7 +4,7 @@ using Volo.Abp.EntityFrameworkCore;
 
 namespace Taitans.OcelotManagement.EntityFrameworkCore
 {
-    public class LazyLoad_Tests : LazyLoad_Tests<AbpOcelotManagementEntityFrameworkCoreTestModule>
+    public class LazyLoad_Tests : LazyLoad_Tests<OcelotManagementEntityFrameworkCoreTestModule>
     {
         protected override void BeforeAddApplication(IServiceCollection services)
         {

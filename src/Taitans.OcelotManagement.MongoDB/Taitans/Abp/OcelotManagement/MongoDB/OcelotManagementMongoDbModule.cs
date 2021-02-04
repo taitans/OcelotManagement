@@ -8,13 +8,13 @@ namespace Taitans.OcelotManagement.MongoDB
         typeof(OcelotManagementDomainModule),
         typeof(AbpMongoDbModule)
         )]
-    public class AbpOcelotManagementMongoDbModule : AbpModule
+    public class OcelotManagementMongoDbModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {
-            context.Services.AddMongoDbContext<AbpOcelotManagementMongoDbContext>(options =>
+            context.Services.AddMongoDbContext<OcelotManagementMongoDbContext>(options =>
             {
-                options.AddDefaultRepositories<IAbpOcelotManagementMongoDbContext>();
+                options.AddDefaultRepositories<IOcelotManagementMongoDbContext>();
 
                 options.AddRepository<Ocelot, MongoOcelotRepository>();
             });

@@ -2,7 +2,7 @@
 
 namespace Taitans.OcelotManagement.Localization
 {
-    [LocalizationResourceName("AbpOcelotManagement")]
+    [LocalizationResourceName("OcelotManagement")]
     public class OcelotManagementResource
     {
 

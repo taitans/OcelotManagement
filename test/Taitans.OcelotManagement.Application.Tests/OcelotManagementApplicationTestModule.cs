@@ -4,10 +4,10 @@ using Volo.Abp.Modularity;
 namespace Taitans.OcelotManagement
 {
     [DependsOn(
-        typeof(AbpOcelotManagementApplicationModule),
+        typeof(OcelotManagementApplicationModule),
         typeof(OcelotManagementDomainTestModule)
         )]
-    public class AbpOcelotManagementApplicationTestModule : AbpModule
+    public class OcelotManagementApplicationTestModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
         {

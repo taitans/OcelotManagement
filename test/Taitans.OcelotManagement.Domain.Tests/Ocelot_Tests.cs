@@ -5,7 +5,7 @@ using Xunit;
 
 namespace Taitans.OcelotManagement
 {
-    public class Ocelot_Tests : AbpOcelotManagementDomainTestBase
+    public class Ocelot_Tests : OcelotManagementDomainTestBase
     {
         private readonly IOcelotRepository _ocelotRepository;
 

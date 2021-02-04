@@ -4,7 +4,7 @@ using Volo.Abp.MongoDB;
 
 namespace Taitans.OcelotManagement.MongoDB
 {
-    public static class AbpOcelotManagementMongoDbContextExtensions
+    public static class OcelotManagementMongoDbContextExtensions
     {
         public static void ConfigureOcelotManagement(
             this IMongoModelBuilder builder,

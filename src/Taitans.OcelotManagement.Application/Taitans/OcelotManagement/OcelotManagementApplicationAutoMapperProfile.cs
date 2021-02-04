@@ -3,9 +3,9 @@ using System;
 
 namespace Taitans.OcelotManagement
 {
-    public class AbpOcelotManagementApplicationAutoMapperProfile : Profile
+    public class OcelotManagementApplicationAutoMapperProfile : Profile
     {
-        public AbpOcelotManagementApplicationAutoMapperProfile()
+        public OcelotManagementApplicationAutoMapperProfile()
         {
             CreateMap<OcelotDto, Ocelot>();
             CreateMap<Ocelot, OcelotDto>();

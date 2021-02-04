@@ -8,7 +8,7 @@ namespace Taitans.OcelotManagement.MongoDB
 {
     [DependsOn(
         typeof(OcelotManagementTestBaseModule),
-        typeof(AbpOcelotManagementMongoDbModule)
+        typeof(OcelotManagementMongoDbModule)
         )]
     public class OcelotManagementMongoDbTestModule : AbpModule
     {

@@ -4,7 +4,7 @@ namespace Taitans.OcelotManagement.Authorization
 {
     public class OcelotManagementPermissions
     {
-        public const string GroupName = "AbpOcelotManagement";
+        public const string GroupName = "OcelotManagement";
 
         public static class Ocelots
         {

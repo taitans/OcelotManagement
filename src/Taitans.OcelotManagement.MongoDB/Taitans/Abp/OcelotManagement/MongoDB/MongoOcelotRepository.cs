@@ -8,9 +8,9 @@ using Volo.Abp.MongoDB;
 
 namespace Taitans.OcelotManagement.MongoDB
 {
-    public class MongoOcelotRepository : MongoDbRepository<IAbpOcelotManagementMongoDbContext, Ocelot, Guid>, IOcelotRepository
+    public class MongoOcelotRepository : MongoDbRepository<IOcelotManagementMongoDbContext, Ocelot, Guid>, IOcelotRepository
     {
-        public MongoOcelotRepository(IMongoDbContextProvider<IAbpOcelotManagementMongoDbContext> dbContextProvider) : base(dbContextProvider)
+        public MongoOcelotRepository(IMongoDbContextProvider<IOcelotManagementMongoDbContext> dbContextProvider) : base(dbContextProvider)
         {
         }
 

@@ -2,7 +2,7 @@
 
 namespace Taitans.OcelotManagement.Settings
 {
-    public class AbpOcelotManagementSettingDefinitionProvider : SettingDefinitionProvider
+    public class OcelotManagementSettingDefinitionProvider : SettingDefinitionProvider
     {
         public override void Define(ISettingDefinitionContext context)
         {

@@ -8,7 +8,7 @@ using Xunit;
 
 namespace Taitans.OcelotManagement
 {
-    public class OcelotAppService_Tests : AbpOcelotManagementApplicationTestBase
+    public class OcelotAppService_Tests : OcelotManagementApplicationTestBase
     {
         private readonly IOcelotAppService _ocelotAppService;
 

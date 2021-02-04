@@ -5,7 +5,7 @@ using Volo.Abp.MongoDB;
 namespace Taitans.OcelotManagement.MongoDB
 {
     [ConnectionStringName(OcelotManagementDbProperties.ConnectionStringName)]
-    public interface IAbpOcelotManagementMongoDbContext : IAbpMongoDbContext
+    public interface IOcelotManagementMongoDbContext : IAbpMongoDbContext
     {
         IMongoCollection<Ocelot> Ocelots { get; }
     }

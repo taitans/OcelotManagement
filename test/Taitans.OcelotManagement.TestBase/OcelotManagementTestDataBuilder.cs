@@ -6,11 +6,11 @@ using Volo.Abp.Threading;
 
 namespace Taitans.OcelotManagement
 {
-    public class AbpOcelotManagementTestDataBuilder : ITransientDependency
+    public class OcelotManagementTestDataBuilder : ITransientDependency
     {
         private readonly IOcelotRepository _ocelotRepository;
 
-        public AbpOcelotManagementTestDataBuilder(
+        public OcelotManagementTestDataBuilder(
              IOcelotRepository ocelotRepository)
         {
             _ocelotRepository = ocelotRepository;
