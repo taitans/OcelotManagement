@@ -23,11 +23,9 @@ namespace Taitans.OcelotManagement.EntityFrameworkCore
 
         public async Task<Ocelot> FindByNameAsync(string name, bool includeDetails = true, CancellationToken cancellationToken = default)
         {
-            var query = from global in (await GetDbSetAsync()).IncludeDetails(includeDetails)
-                        where global.Name == name
-                        select global;
-
-            return await (await GetDbSetAsync()).IncludeDetails(includeDetails).FirstOrDefaultAsync(c => c.Name == name, GetCancellationToken(cancellationToken)); 
+            return await (await GetDbSetAsync())
+                .OrderBy(x => x.Id).IncludeDetails(includeDetails)
+                .FirstOrDefaultAsync(c => c.Name == name, GetCancellationToken(cancellationToken));
         }
 
         public async Task<List<OcelotRoute>> GetRoutesAsync(Guid id)

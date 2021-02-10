@@ -1,7 +1,8 @@
 ﻿namespace Taitans.OcelotManagement
 {
-    public static class OcelotConsts
+    public class RouteSecurityOptionIPBlockedConsts
     {
         public const int NameMaxLength = 64;
+        public const int IPMaxLength = 39;
     }
 }

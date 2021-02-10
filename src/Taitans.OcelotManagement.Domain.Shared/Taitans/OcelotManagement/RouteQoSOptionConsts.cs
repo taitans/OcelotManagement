@@ -1,6 +1,6 @@
 ﻿namespace Taitans.OcelotManagement
 {
-    public static class OcelotConsts
+    public class RouteQoSOptionConsts
     {
         public const int NameMaxLength = 64;
     }
