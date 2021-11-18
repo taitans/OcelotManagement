@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="$(MicrosoftNETTestSdkPackageVersion)" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
     <PackageReference Include="Mongo2Go" Version="$(Mongo2GoPackageVersion)" />
     <ProjectReference Include="..\..\src\Taitans.OcelotManagement.MongoDB\Taitans.OcelotManagement.MongoDB.csproj" />
     <ProjectReference Include="..\Taitans.OcelotManagement.TestBase\Taitans.OcelotManagement.TestBase.csproj" />
