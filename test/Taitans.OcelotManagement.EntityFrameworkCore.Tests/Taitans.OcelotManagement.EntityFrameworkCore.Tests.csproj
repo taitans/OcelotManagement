@@ -12,7 +12,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="$(MicrosoftPackageVersion)" />
     <ProjectReference Include="..\..\src\Taitans.OcelotManagement.EntityFrameworkCore\Taitans.OcelotManagement.EntityFrameworkCore.csproj" />
     <ProjectReference Include="..\Taitans.OcelotManagement.TestBase\Taitans.OcelotManagement.TestBase.csproj" />
-    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="4.4.0" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="4.4.4" />
   </ItemGroup>
 
 </Project>
